@@ -22,29 +22,6 @@ files are separate, the class can work in parallel.
 Commands below use `python3`. On Windows, use `python` instead if that is the
 command provided by your installation.
 
-## Instructor: publish this exercise to GitHub
-
-Create a new, empty GitHub repository. Do not ask GitHub to add a README,
-`.gitignore`, or licence, because those files are already present here. Then, from
-this directory, run:
-
-```bash
-git init
-git add .
-git commit -m "Add circle pull-request exercise"
-git branch -M main
-git remote add origin https://github.com/ORGANISATION/REPOSITORY.git
-git push -u origin main
-```
-
-Replace `ORGANISATION/REPOSITORY` with the real repository path. Give students
-write access, or ask them to fork the repository if your class uses forks.
-
-For a reliably enforced review, use GitHub's repository settings to protect the
-`main` branch and require at least one approving pull-request review before a
-merge. If branch protection is not available, instruct students not to merge
-until their partner has submitted an approval.
-
 ## Student A: make the change
 
 In these instructions, replace `NN` with your two-digit student number. For
