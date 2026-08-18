@@ -19,9 +19,6 @@ files are separate, the class can work in parallel.
 - Your assigned student number, from `01` to `20`.
 - A partner who will review your pull request.
 
-Commands below use `python3`. On Windows, use `python` instead if that is the
-command provided by your installation.
-
 ## Student A: make the change
 
 In these instructions, replace `NN` with your two-digit student number. For
@@ -33,7 +30,7 @@ as `student-07-blue-circle`.
 Do this once, using the URL supplied by the instructor:
 
 ```bash
-git clone https://github.com/ORGANISATION/REPOSITORY.git
+git clone https://github.com/frazerpearce/IDP_gitdemo.git
 cd REPOSITORY
 ```
 
@@ -60,9 +57,9 @@ Do not make this exercise's change directly on `main`.
 ### 3. Create a Python environment and install the dependency
 
 ```bash
-python3 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
-python3 -m pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 On Windows PowerShell, activate the environment with:
@@ -78,7 +75,7 @@ The `.venv` directory and generated PNG images are ignored by Git.
 Student `NN` runs:
 
 ```bash
-python3 scripts/student_NN.py
+python scripts/student_NN.py
 ```
 
 The script writes `student_NN_circle.png` in the current directory. Open it and
@@ -106,7 +103,7 @@ Do not edit another student's numbered script.
 Run your script again:
 
 ```bash
-python3 scripts/student_NN.py
+python scripts/student_NN.py
 ```
 
 Open the newly generated PNG and check:
@@ -175,7 +172,7 @@ This completes the numbered Git/GitHub collaboration exercise.
 
 Tests / evidence
 
-Ran: python3 scripts/student_NN.py
+Ran: python scripts/student_NN.py
 Observed a blue unit circle centred at (0, 0), on a white square frame
 with x and y limits of [-2, 2].
 ```
@@ -199,7 +196,7 @@ Optionally, test the contributor's branch locally:
 ```bash
 git fetch origin
 git switch student-NN-blue-circle
-python3 scripts/student_NN.py
+python scripts/student_NN.py
 ```
 
 Return to the pull request on GitHub. Select **Review changes**, choose
