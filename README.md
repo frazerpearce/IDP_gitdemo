@@ -31,7 +31,7 @@ Do this once, using the URL supplied by the instructor:
 
 ```bash
 git clone https://github.com/frazerpearce/IDP_gitdemo.git
-cd REPOSITORY
+cd IDP_gitdemo
 ```
 
 Check that the clone is ready:
